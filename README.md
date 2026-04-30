@@ -25,7 +25,7 @@ Il sistema implementa una pipeline per il controllo della mano reale basata su *
 
 Il sistema consente il controllo diretto della mano robotica RH8D su hardware reale, includendo:
 
-- controllo cinematico delle dita tramite CLIK
+- controllo cinematico delle dita (indice, medio e pollice) tramite CLIK
 
 - invio comandi ai motori Dynamixel
 
@@ -76,7 +76,7 @@ Nodo principale del controllo.
 Funzioni:
 
 * Implementa il controllo CLIK su sistema reale
-* Riceve il target della presa
+* Riceve il target della presa (punto verso cui le tre dita devono chiudersi per effettuare il grasp)
 * Calcola la configurazione articolare delle dita
 * Genera i comandi per i motori
 * Riceve il feedback dei sensori fingertip
